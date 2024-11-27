@@ -1,12 +1,9 @@
-[![CI](https://github.com/ComputationalPhysiology/simcardems/actions/workflows/main.yml/badge.svg)](https://github.com/ComputationalPhysiology/simcardems/actions/workflows/main.yml)
-[![PyPI version](https://badge.fury.io/py/simcardems.svg)](https://badge.fury.io/py/simcardems)
-[![codecov](https://codecov.io/gh/ComputationalPhysiology/simcardems/branch/main/graph/badge.svg?token=V5DOQ1PUVF)](https://codecov.io/gh/ComputationalPhysiology/simcardems)
-[![github pages](https://github.com/ComputationalPhysiology/simcardems/actions/workflows/github-pages.yml/badge.svg)](https://github.com/ComputationalPhysiology/simcardems/actions/workflows/github-pages.yml)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ComputationalPhysiology/simcardems/main.svg)](https://results.pre-commit.ci/latest/github/ComputationalPhysiology/simcardems/main)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v2.1-blue.svg)](https://www.gnu.org/licenses/lgpl-2.1)
-[![DOI](https://zenodo.org/badge/409220068.svg)](https://zenodo.org/badge/latestdoi/409220068)
-[![status](https://joss.theoj.org/papers/28986461c27b8a76c8ac5a43dc57e8dc/status.svg)](https://joss.theoj.org/papers/28986461c27b8a76c8ac5a43dc57e8dc)
+
+Software, source code and data used in "Insights from Electromechanical Simulations to Assess Omecamtiv Mecarbil Efficacy in Heart Failure", by Maria Teresa Mora, Ilse van Herck, Cécile Daversin-Catty, Henrik Finsberg, Jordi Llopis-Lorente,
+Javier Saiz, Hermenegild Arevalo, Samuel Wall, and Beatriz Trenor.
+
+# UPV Model
+<TODO>
 
 # Simula Cardiac Electro-Mechanics Solver
 
