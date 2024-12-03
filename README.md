@@ -1,4 +1,4 @@
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14267307.svg)](https://doi.org/10.5281/zenodo.14267307)
 # Software, source code and data used in "Insights from Electromechanical Simulations to Assess Omecamtiv Mecarbil Efficacy in Heart Failure", 
 by Maria Teresa Mora, Ilse van Herck, Cécile Daversin-Catty, Henrik Finsberg, Jordi Llopis-Lorente, Javier Saiz, Hermenegild Arevalo, Samuel Wall, and Beatriz Trenor.
 
