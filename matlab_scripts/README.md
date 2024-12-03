@@ -1,7 +1,3 @@
-
-Software, source code and data used in "Insights from Electromechanical Simulations to Assess Omecamtiv Mecarbil Efficacy in Heart Failure", by Maria Teresa Mora, Ilse van Herck, Cécile Daversin-Catty, Henrik Finsberg, Jordi Llopis-Lorente,
-Javier Saiz, Hermenegild Arevalo, Samuel Wall, and Beatriz Trenor.
-
 # UPV Matlab scripts
 MATLAB files to run cellular electro-mechanical simulations with Omecamtiv Mecarbil
 
