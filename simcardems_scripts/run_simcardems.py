@@ -2,12 +2,8 @@
 
 from pathlib import Path
 import dolfin
-import matplotlib.pyplot as plt
 import simcardems
-import numpy as np
-import sys
-import ufl_legacy
-import typing
+import ufl
 
 
 logger = simcardems.utils.getLogger(__name__)
@@ -15,29 +11,30 @@ here = Path(__file__).absolute().parent
 outdir = here / "results"
 
 # Final time
-T=8500000
+T = 8500000
 
 # Frequency at which with export (.xdmf) files for visualization
-save_freq=10
+save_freq = 10
 
 # Cell model : "fully_coupled_ORdmm_Land", "fully_coupled_Tor_Land", "explicit_ORdmm_Land", "pureEP_ORdmm_Land".
-cellmodel="fully_coupled_Tor_Land"
+cellmodel = "fully_coupled_Tor_Land"
 
 # Cell model initialization (.json file or None)
-cell_init_file=None
+cell_init_file = None
 
 # Disease state : "healthy", "hf"
-disease_state="hf"
+disease_state = "hf"
 
 # PCL : Pacing cycle length (ms)
-PCL=1000
+PCL = 1000
 
 # Restart from previous simulation : False / True
 # if True : reload from a state file state.h5 stored in .<here>/results/state.h5
-load_state=False
+load_state = False
 
 # Drug dosage from factors file (.json)
 drug_factors_file = "drug_factors/OM/OM_Tor_0p0uM.json"
+
 
 def stimulus_domain(mesh):
     marker = 1
@@ -48,6 +45,7 @@ def stimulus_domain(mesh):
     subdomain.mark(domain, marker)
 
     return simcardems.geometry.StimulusDomain(domain=domain, marker=marker)
+
 
 # New class for EMcoupling that can overwrite the built-in function
 class EMCoupling(simcardems.models.fully_coupled_Tor_Land.EMCoupling):
@@ -63,6 +61,7 @@ class EMCoupling(simcardems.models.fully_coupled_Tor_Land.EMCoupling):
 
     def ep_to_coupling(self):
         super().ep_to_coupling()
+
 
 def INaL(vs, parameters):
     (
@@ -148,7 +147,8 @@ def INaL(vs, parameters):
     GNaL = 0.0279 * scale_INaL * scale_drug_INaL * scale_popu_GNaL * HF_scaling_GNaL
     fINaLp = 1.0 / (1.0 + KmCaMK / CaMKa)
     return (-ENa + v) * ((1.0 - fINaLp) * hL + fINaLp * hLp) * GNaL * mL
-    
+
+
 config = simcardems.Config(
     outdir=outdir,
     coupling_type=cellmodel,
@@ -189,5 +189,6 @@ else:
 
 # Run SimCardEMS with the above configuration
 runner = simcardems.Runner.from_models(config=config, coupling=coupling)
-runner.solve(T=config.T, save_freq=config.save_freq, show_progress_bar=config.show_progress_bar)
-
+runner.solve(
+    T=config.T, save_freq=config.save_freq, show_progress_bar=config.show_progress_bar
+)
