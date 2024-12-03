@@ -8,24 +8,13 @@
 
 See [Installation instructions](https://computationalphysiology.github.io/simcardems/install.html)
 
-## Getting started
 
-See [the demos](https://computationalphysiology.github.io/simcardems/simple_demo.html)
+
 
 ## Documentation
 
 Documentation is hosted at http://computationalphysiology.github.io/simcardems.
 
-## Automated test
-
-Tests are provided in the folder [tests](https://github.com/ComputationalPhysiology/simcardems/tree/main/tests). You can run the tests with pytest
-
-```
-python3 -m pytest tests -vv
-```
-
-## Contributing
-See [the contributing section](https://computationalphysiology.github.io/simcardems/CONTRIBUTING.html)
 
 ## Citing
 If you use `simcardems` in your research, please cite it as follows
@@ -43,10 +32,6 @@ If you use `simcardems` in your research, please cite it as follows
   journal = {Journal of Open Source Software}
  }
 ```
-
-## Known issues
-
-- Issue with h5py, see https://github.com/ComputationalPhysiology/pulse#known-issues
 
 
 ## Authors
