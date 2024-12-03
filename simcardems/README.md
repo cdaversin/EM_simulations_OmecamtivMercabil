@@ -10,7 +10,6 @@ See [Installation instructions](https://computationalphysiology.github.io/simcar
 
 
 
-
 ## Documentation
 
 Documentation is hosted at http://computationalphysiology.github.io/simcardems.
